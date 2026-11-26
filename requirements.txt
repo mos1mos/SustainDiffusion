@@ -42,3 +42,11 @@ typing-extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.1
 zipp==3.19.2
+
+# Additional requirements that were missing
+torchvision==0.18.1
+deap==1.4.1
+compel==2.0.3
+ultralytics==8.2.48
+opencv-python-headless==4.10.0.84
+setuptools==70.0.0

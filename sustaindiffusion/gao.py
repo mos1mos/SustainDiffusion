@@ -257,7 +257,8 @@ def generate_image(img_num, img_path, prompt, hyperparameters, folder_name, no_p
     denoising_steps = hyperparameters["denoising_steps"]
     guidance_scale = hyperparameters["guidance_scale"]
 
-    if no_prompt:
+    # Fix: Added not (before was if no_prompt) because otherwise it crashed without using --no_prompt
+    if not no_prompt:
 
         pos_prompt = createPosPrompt(
             prompt, hyperparameters["positive_prompt"], hyperparameters["weight"]
